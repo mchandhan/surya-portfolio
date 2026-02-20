@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surya Sundaram — Architect & Interior Designer</title>
+    <meta name="description"
+        content="Portfolio of Surya Sundaram — Architect specializing in facade treatments, premium residential interiors, and commercial design in India." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+
+    <!-- ── NAV ──────────────────────────────────────────────────────── -->
+    <nav class="nav" id="navbar">
+        <div class="nav__brand">
+            <span class="nav__logo">SS</span>
+            <span class="nav__name">Surya Sundaram</span>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="navLinks">
+            <li><a href="#hero" class="nav__link">Home</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#process" class="nav__link">Process</a></li>
+            <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ── HERO ─────────────────────────────────────────────────────── -->
+    <section class="hero" id="hero">
+
+        <!-- Floating abstract blob shapes -->
+        <div class="blob blob--1" data-speed="0.3"></div>
+        <div class="blob blob--2" data-speed="0.6"></div>
+        <div class="blob blob--3" data-speed="0.2"></div>
+        <div class="blob blob--4" data-speed="0.5"></div>
+        <div class="blob blob--5" data-speed="0.4"></div>
+        <div class="blob blob--6" data-speed="0.7"></div>
+
+        <div class="hero__content">
+            <p class="hero__eyebrow">Architecture · Interior · Space</p>
+            <h1 class="hero__headline">
+                Spaces that <em>breathe</em>,<br />
+                designs that <mark>endure</mark>.
+            </h1>
+            <p class="hero__sub">
+                Ar. Surya Sundaram — crafting thoughtful built environments<br />
+                across residential, commercial &amp; urban contexts.
+            </p>
+            <div class="hero__cta-group">
+                <a href="#projects" class="btn btn--primary">View Projects</a>
+                <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ── PROJECTS ──────────────────────────────────────────────────── -->
+    <section class="section projects" id="projects">
+        <div class="section__header">
+            <p class="section__tag">Selected Work</p>
+            <h2 class="section__title">Professional Projects</h2>
+        </div>
+
+        <div class="projects__grid">
+
+            <!-- Project 1 -->
+            <article class="project-card project-card--wide" onclick="openProject('p1')">
+                <div class="project-card__visual">
+                    <img src="images/project1.jpg" alt="Ullagaram Duplex House" class="project-card__img-placeholder" />
+                </div>
+                <div class="project-card__info">
+                    <span class="project-card__category">Facade Treatment</span>
+                    <h3 class="project-card__title">Ullagaram Duplex House</h3>
+                    <p class="project-card__meta">Chennai&ensp;·&ensp;Residential</p>
+                    <p class="project-card__concept">
+                        Industrial-chic elevation with exposed brick warmth and deconstructed décor — effortlessly cool.
+                    </p>
+                    <span class="project-card__arrow">→</span>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" onclick="openProject('p2')">
+                <div class="project-card__visual">
+                    <img src="images/project2.jpg" alt="Vedha & Capella Residences"
+                        class="project-card__img-placeholder" />
+                </div>
+                <div class="project-card__info">
+                    <span class="project-card__category">Premium Residential</span>
+                    <h3 class="project-card__title">Vedha &amp; Capella Residences</h3>
+                    <p class="project-card__meta">Bangalore &amp; Chennai&ensp;·&ensp;Interior</p>
+                    <p class="project-card__concept">
+                        Modern rustic living — warmth of nature meets contemporary refinement.
+                    </p>
+                    <span class="project-card__arrow">→</span>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" onclick="openProject('p3')">
+                <div class="project-card__visual">
+                    <img src="images/project3.jpg" alt="Glo Clinic & Janata Seva HQ"
+                        class="project-card__img-placeholder" />
+                </div>
+                <div class="project-card__info">
+                    <span class="project-card__category">Commercial Interior</span>
+                    <h3 class="project-card__title">Glo Clinic &amp; Janata Seva HQ</h3>
+                    <p class="project-card__meta">Bangalore&ensp;·&ensp;Commercial</p>
+                    <p class="project-card__concept">
+                        Functional space planning — maximising utility while eliminating dead zones.
+                    </p>
+                    <span class="project-card__arrow">→</span>
+                </div>
+            </article>
+
+            <!-- Project 4 — 30×40 Residence -->
+            <article class="project-card" onclick="openProject('p4')">
+                <div class="project-card__visual">
+                    <img src="images/project4.jpg" alt="30×40 Residence" class="project-card__img-placeholder" />
+                </div>
+                <div class="project-card__info">
+                    <span class="project-card__category">Facade + Planning</span>
+                    <h3 class="project-card__title">30×40 Residence</h3>
+                    <p class="project-card__meta">Tumkur, Karnataka&ensp;·&ensp;1200 sq ft</p>
+                    <p class="project-card__concept">
+                        2D floor plans, 3D views and renders — from concept to client approval.
+                    </p>
+                    <span class="project-card__arrow">→</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ── PROJECT MODAL ─────────────────────────────────────────────── -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeProject()">
+        <div class="modal" id="projectModal" onclick="event.stopPropagation()">
+            <button class="modal__close" onclick="closeProject()">✕</button>
+            <div class="modal__content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- ── ABOUT ─────────────────────────────────────────────────────── -->
+    <section class="section about" id="about">
+        <div class="about__grid">
+            <div class="about__portrait">
+                <div class="portrait-frame">
+                    <div class="portrait-art">
+                        <div class="pa-hair"></div>
+                        <div class="pa-face"></div>
+                        <div class="pa-collar"></div>
+                    </div>
+                    <div class="portrait-bg-blob"></div>
+                </div>
+                <div class="about__stats">
+                    <div class="stat">
+                        <span class="stat__num" data-target="3">0</span>
+                        <span class="stat__label">Professional Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num" data-target="5">0</span>
+                        <span class="stat__label">Design Typologies</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num" data-target="2">0</span>
+                        <span class="stat__label">Studios Collaborated</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__text">
+                <p class="section__tag">About</p>
+                <h2 class="section__title">Designing with<br /><em>purpose &amp; precision</em></h2>
+                <p class="about__bio">
+                    I'm Ar. Surya Sundaram — an architect and interior designer based in Chennai, India. I believe
+                    spaces should tell a story: one shaped by the people who inhabit them, the light that filters
+                    through them, and the materials that define them.
+                </p>
+                <p class="about__bio">
+                    Collaborating with studios like <strong>Vibrant Spaces</strong> and <strong>Prism
+                        Innovations</strong>, I have worked across facade design, premium residentials and commercial
+                    interiors — always leading with empathy for the end user and rigour in execution.
+                </p>
+                <div class="about__philosophy">
+                    <blockquote class="philosophy-quote">
+                        "Design is thinking made visual."
+                        <cite>— Saul Bass</cite>
+                    </blockquote>
+                </div>
+                <div class="about__tags">
+                    <span class="tag">AutoCAD</span>
+                    <span class="tag">3ds Max</span>
+                    <span class="tag">V-Ray</span>
+                    <span class="tag">Photoshop</span>
+                    <span class="tag">SketchUp</span>
+                    <span class="tag">Lumion</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SERVICES ──────────────────────────────────────────────────── -->
+    <section class="section services" id="services">
+        <div class="section__header">
+            <p class="section__tag">What I Do</p>
+            <h2 class="section__title">Services</h2>
+        </div>
+
+        <div class="services__grid">
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <div class="icon-house">
+                        <div class="ih-roof"></div>
+                        <div class="ih-body"></div>
+                        <div class="ih-door"></div>
+                    </div>
+                </div>
+                <h3 class="service-card__title">Residential</h3>
+                <p class="service-card__desc">Bespoke homes designed around how you live — from sprawling villas to
+                    compact urban dwellings.</p>
+                <ul class="service-card__list">
+                    <li>Floor Plan Design</li>
+                    <li>Facade Treatment</li>
+                    <li>Interior Layouts</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <div class="icon-building">
+                        <div class="ib-tower"></div>
+                        <div class="ib-windows">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="service-card__title">Commercial</h3>
+                <p class="service-card__desc">Offices, clinics, and retail environments designed for maximum
+                    functionality and lasting impression.</p>
+                <ul class="service-card__list">
+                    <li>Sanction Drawings</li>
+                    <li>Space Planning</li>
+                    <li>3D Visualisation</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <div class="icon-interior">
+                        <div class="ii-frame"></div>
+                        <div class="ii-sofa"></div>
+                        <div class="ii-lamp"></div>
+                    </div>
+                </div>
+                <h3 class="service-card__title">Interior</h3>
+                <p class="service-card__desc">Crafted interiors with curated material palettes, lighting and furniture
+                    that reflect personality.</p>
+                <ul class="service-card__list">
+                    <li>Concept Development</li>
+                    <li>Material Sourcing</li>
+                    <li>Photorealistic Renders</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__icon">
+                    <div class="icon-urban">
+                        <div class="iu-city">
+                            <span class="b1"></span><span class="b2"></span><span class="b3"></span>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="service-card__title">Urban Design</h3>
+                <p class="service-card__desc">Site-sensitive design thinking that harmonises built form with streetscape
+                    and context.</p>
+                <ul class="service-card__list">
+                    <li>Site Analysis</li>
+                    <li>Elevation Studies</li>
+                    <li>Contextual Planning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PROCESS ───────────────────────────────────────────────────── -->
+    <section class="section process" id="process">
+        <div class="section__header">
+            <p class="section__tag">How I Work</p>
+            <h2 class="section__title">Process</h2>
+        </div>
+
+        <div class="process__track">
+            <div class="process-step" data-step="01">
+                <div class="process-step__num">01</div>
+                <div class="process-step__content">
+                    <h3>Research</h3>
+                    <p>Site visits, client discovery sessions, context analysis — understanding before designing.</p>
+                </div>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step" data-step="02">
+                <div class="process-step__num">02</div>
+                <div class="process-step__content">
+                    <h3>Concept</h3>
+                    <p>Mood boards, reference imagery, spatial narratives and early sketch explorations.</p>
+                </div>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step" data-step="03">
+                <div class="process-step__num">03</div>
+                <div class="process-step__content">
+                    <h3>Development</h3>
+                    <p>2D plans, 3D models, rendered views and iterative client reviews to refine the design.</p>
+                </div>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step" data-step="04">
+                <div class="process-step__num">04</div>
+                <div class="process-step__content">
+                    <h3>Execution</h3>
+                    <p>Drawing sets, vendor co-ordination and on-site supervision for faithful delivery.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design styles marquee -->
+        <div class="styles__marquee">
+            <div class="marquee__track">
+                <span>Industrial Warmth</span>
+                <span class="dot">◆</span>
+                <span>Cozy Minimalism</span>
+                <span class="dot">◆</span>
+                <span>Modern Rustic</span>
+                <span class="dot">◆</span>
+                <span>Eclectic Elegance</span>
+                <span class="dot">◆</span>
+                <span>Urban Chic</span>
+                <span class="dot">◆</span>
+                <span>Industrial Warmth</span>
+                <span class="dot">◆</span>
+                <span>Cozy Minimalism</span>
+                <span class="dot">◆</span>
+                <span>Modern Rustic</span>
+                <span class="dot">◆</span>
+                <span>Eclectic Elegance</span>
+                <span class="dot">◆</span>
+                <span>Urban Chic</span>
+                <span class="dot">◆</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ───────────────────────────────────────────────────── -->
+    <section class="section contact" id="contact">
+        <div class="contact__blob-bg"></div>
+        <div class="contact__inner">
+            <div class="contact__header">
+                <p class="section__tag section__tag--light">Let's Connect</p>
+                <h2 class="section__title section__title--light">
+                    Got a project<br /> in mind? <em>Let's talk.</em>
+                </h2>
+            </div>
+
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <a href="mailto:ar.suryasundaram@gmail.com" class="contact-item">
+                        <div class="contact-item__icon ci-email"></div>
+                        <div>
+                            <span class="contact-item__label">Email</span>
+                            <span class="contact-item__value">ar.suryasundaram@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+917975144765" class="contact-item">
+                        <div class="contact-item__icon ci-phone"></div>
+                        <div>
+                            <span class="contact-item__label">Phone</span>
+                            <span class="contact-item__value">+91 79751 44765</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arsuryasundaram" target="_blank" rel="noopener"
+                        class="contact-item">
+                        <div class="contact-item__icon ci-linkedin"></div>
+                        <div>
+                            <span class="contact-item__label">LinkedIn</span>
+                            <span class="contact-item__value">in/arsuryasundaram</span>
+                        </div>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-item__icon ci-location"></div>
+                        <div>
+                            <span class="contact-item__label">Location</span>
+                            <span class="contact-item__value">Chennai, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="name" placeholder="Your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="femail">Email</label>
+                        <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="fproject">Project Type</label>
+                        <select id="fproject" name="project">
+                            <option value="">Select a service…</option>
+                            <option>Residential Design</option>
+                            <option>Commercial Interior</option>
+                            <option>Facade Treatment</option>
+                            <option>Urban Design</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fmessage">Message</label>
+                        <textarea id="fmessage" name="message" rows="4" placeholder="Tell me about your project…"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+                    <div class="form-success" id="formSuccess">✓ Message sent! I'll be in touch shortly.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ────────────────────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <span class="nav__logo">SS</span>
+                <p>© 2025 Surya Sundaram. All rights reserved.</p>
+            </div>
+            <p class="footer__copy">Ar. Suryasundaram · Chennai, India</p>
+        </div>
+    </footer>
+
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>
